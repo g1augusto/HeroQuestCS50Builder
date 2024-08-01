@@ -18,7 +18,7 @@ version = "1.0"
 app = Flask(__name__)
 
 # Configure CS50 Library to use SQLite database
-db = SQL("sqlite:///hqbuilder.db")
+db = SQL("sqlite:///db/hqbuilder.db")
 
 # Configure session to use filesystem (instead of signed cookies)
 app.config["SESSION_PERMANENT"] = False
