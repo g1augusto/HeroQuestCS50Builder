@@ -21,6 +21,10 @@ app = Flask(__name__)
 db = SQL("sqlite:///db/hqbuilder.db")
 
 # Configure session to use filesystem (instead of signed cookies)
+# SECRET_KEY securely signs the session cookie 
+# https://flask.palletsprojects.com/en/3.0.x/config/#SECRET_KEY
+# https://blog.paradoxis.nl/defeating-flasks-session-management-65706ba9d3ce
+app.config["SECRET_KEY"] = os.urandom(64)
 app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
