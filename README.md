@@ -54,7 +54,7 @@ Once logged in, the user is presented with the main screen of the application an
   - Wandering monster
     - This is selected by placing a monster from the canvas on the single cell at the bottom of the right bar
 <br>
-<br>
+
 # Print function
 Maps can be printed to easily play with the base game system, the printed format follows the look and feel of the original HeroQuest Questbook:
 
